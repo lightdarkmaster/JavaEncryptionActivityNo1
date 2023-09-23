@@ -27,9 +27,18 @@ public class scannerCalculator {
         System.out.println("The difference of the wo numbers is "+ difference);//the difference
         System.out.println("The product of the wo numbers is "+ product);//the product
         System.out.println("The quotient of the wo numbers is "+ quotient);//the quotient
+        addSomeCodeHere();
 
         //end of the code..
         //nothing follows//
 
     }
+    //function to add
+    public static void addSomeCodeHere(){
+        System.out.println("Hello to this world");
+    }
 }
+
+/// nothing follows.. ---
+//need to fix some code..
+
