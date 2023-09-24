@@ -5,16 +5,16 @@ public class scannerCalculator {
         //defining variables as double to accept decimal value.
         double sum, difference, product, quotient, num1, num2;
 
-        //defining Scanner class..
-        Scanner input = new Scanner(System.in);
+        try (//defining Scanner class..
+        Scanner input = new Scanner(System.in)) {
+            //ask for the input of the user in the first number
+            System.out.println("Enter num1: ");
+            num1 = input.nextDouble();
 
-        //ask for the input of the user in the first number
-        System.out.println("Enter num1: ");
-        num1 = input.nextDouble();
-
-        //ask the user for the second number
-        System.out.println("Enter num2: ");
-        num2 = input.nextDouble();
+            //ask the user for the second number
+            System.out.println("Enter num2: ");
+            num2 = input.nextDouble();
+        }
 
         //operations..
         sum = num1 + num2;
@@ -40,5 +40,5 @@ public class scannerCalculator {
 }
 
 /// nothing follows.. ---
-//need to fix some code..
+//need to fix some code.
 
