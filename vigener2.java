@@ -47,7 +47,6 @@ public class vigener2 {
                 decryptedText.append(c);
             }
         }
-
         return decryptedText.toString();
     }
 }
