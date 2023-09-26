@@ -43,7 +43,7 @@ public class Polyalphabetic {
     {
         int len = msg.length();
 
-        // generating the keystream
+        // generating the key-stream
         String newKey = key.concat(msg);
         newKey = newKey.substring(0, newKey.length() - key.length());
         String encryptMsg = "";
@@ -74,3 +74,4 @@ public class Polyalphabetic {
         return decryptMsg;
     }
 }
+//fix ko na an input na dapat na accept hin integer tas ig coconvert into char or string..
