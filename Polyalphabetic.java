@@ -1,7 +1,7 @@
 
 import java.util.*;
 
-public class AutoKey {
+public class Polyalphabetic {
 
     private static final String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

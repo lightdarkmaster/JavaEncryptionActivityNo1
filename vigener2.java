@@ -1,9 +1,21 @@
+import java.util.Scanner;
 public class vigener2 {
     public static void main(String[] args) {
-        String plaintext = "HELLO";
-        String keyword = "KEY";
+
+        Scanner input = new Scanner(System.in);
+        String plaintext;
+        String keyword;
+        System.out.println("Enter plaintext: ");
+        plaintext = input.nextLine();
+
+        System.out.println("Key: ");
+        keyword = input.nextLine();
+
+
 
         String encryptedText = encrypt(plaintext, keyword);
+
+
         System.out.println("Plaintext: " + plaintext);
         System.out.println("Encrypted: " + encryptedText);
 
@@ -50,5 +62,4 @@ public class vigener2 {
         return decryptedText.toString();
     }
 }
-//this is what I'd use in my project
-
+//to do: fix decryption
