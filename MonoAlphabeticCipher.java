@@ -46,4 +46,4 @@ public class MonoAlphabeticCipher  {
 
     }
 }
-//add it to the GUI
+//need to add GUI to this concept..
