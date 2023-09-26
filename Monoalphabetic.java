@@ -20,7 +20,7 @@ public class Monoalphabetic {
         if (isInteger(key)) {
             intKey = Integer.parseInt(key);
         } else {
-            // Handle string key by converting it to uppercase
+            // Handle string key by converting it to uppercase (pwersa to uppercase char)..haahahh.
             key = key.toUpperCase();
             intKey = key.charAt(0) - 'A';
         }
