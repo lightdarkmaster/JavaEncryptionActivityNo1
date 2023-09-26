@@ -1,4 +1,3 @@
-
 import java.util.*;
 
 public class Polyalphabetic {
@@ -7,22 +6,37 @@ public class Polyalphabetic {
 
     public static void main(String[] args)
     {
-        String msg = "HELLO";
-        String key = "P";
+        Scanner input = new Scanner(System.in);
 
-        // This if statement is all about java regular expression
-        // [] for range
-        // // Extra \ is used to escape one \
-        // \\d acts as delimiter
-        // ? once or not at all
-        // . Any character (may or may not match line terminators)
-        if (key.matches("[-+]?\\d*\\.?\\d+"))
-            key = "" + alphabet.charAt(Integer.parseInt(key));
-        String enc = autoEncryption(msg, key);
+        System.out.println("Enter plaintext: ");
+        String msg = input.nextLine();
+
+        System.out.println("Enter key: ");
+        String key = input.nextLine();
+
+        String enc;
+        if (isInteger(key)) {
+            int numericKey = Integer.parseInt(key);
+            key = "" + alphabet.charAt(numericKey % 26);
+            enc = autoEncryption(msg, key);
+        } else {
+            enc = autoEncryption(msg, key);
+        }
 
         System.out.println("Plaintext : " + msg);
+        System.out.println("Key : " + key);
         System.out.println("Encrypted : " + enc);
         System.out.println("Decrypted : " + autoDecryption(enc, key));
+        System.out.println("Poly-Alphabetic Cipher");
+    }
+
+    public static boolean isInteger(String str) {
+        try {
+            Integer.parseInt(str);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+        }
     }
 
     public static String autoEncryption(String msg, String key)
@@ -60,5 +74,3 @@ public class Polyalphabetic {
         return decryptMsg;
     }
 }
-
-//this is the logic I use in the implementation of my cipher text.. poly-alphabetic Cipher..
