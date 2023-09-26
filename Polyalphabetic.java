@@ -4,15 +4,16 @@ public class Polyalphabetic {
 
     private static final String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter plaintext: ");
         String msg = input.nextLine();
+        msg = msg.toUpperCase();
 
         System.out.println("Enter key: ");
         String key = input.nextLine();
+        key = key.toUpperCase();
 
         String enc;
         if (isInteger(key)) {
@@ -39,8 +40,7 @@ public class Polyalphabetic {
         }
     }
 
-    public static String autoEncryption(String msg, String key)
-    {
+    public static String autoEncryption(String msg, String key){
         int len = msg.length();
 
         // generating the key-stream
@@ -74,4 +74,4 @@ public class Polyalphabetic {
         return decryptMsg;
     }
 }
-//fix ko na an input na dapat na accept hin integer tas ig coconvert into char or string..
+//fix ko na an input na dapat na accept hin integer tas ig coconvert into char or string --chan-chan..
