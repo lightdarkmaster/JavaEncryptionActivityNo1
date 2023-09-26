@@ -61,5 +61,9 @@ public class vigener2 {
         }
         return decryptedText.toString();
     }
+
+    public static void createUser(){
+        //add code here..
+    }
 }
 //to do: fix decryption
