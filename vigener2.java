@@ -11,8 +11,6 @@ public class vigener2 {
         System.out.println("Key: ");
         keyword = input.nextLine();
 
-
-
         String encryptedText = encrypt(plaintext, keyword);
 
 
@@ -60,10 +58,6 @@ public class vigener2 {
             }
         }
         return decryptedText.toString();
-    }
-
-    public static void createUser(){
-        //add code here..
     }
 }
 //to do: fix decryption
