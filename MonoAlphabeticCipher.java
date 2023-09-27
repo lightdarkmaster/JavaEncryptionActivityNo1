@@ -42,6 +42,7 @@ public class MonoAlphabeticCipher  {
 
         System.out.print("Decipher: ");
         System.out.println(plaintext);
+        System.out.println();
 
 
     }

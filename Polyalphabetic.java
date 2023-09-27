@@ -44,8 +44,7 @@ public class Polyalphabetic {
         return encryptMsg;
     }
 
-    public static String autoDecryption(String msg, String key)
-    {
+    public static String autoDecryption(String msg, String key){
         String currentKey = key;
         String decryptMsg = "";
 
