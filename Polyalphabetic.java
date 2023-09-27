@@ -61,4 +61,5 @@ public class Polyalphabetic {
     }
 }
 
-//this is the logic I use in the implementation of my cipher text.. poly-alphabetic Cipher..
+//this is the logic I use in the implementation of my cipher text.. poly-alphabetic Cipher
+//to do make U
