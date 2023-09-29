@@ -12,7 +12,6 @@ public class vigener2 {
         keyword = input.nextLine();
 
 
-
         String encryptedText = encrypt(plaintext, keyword);
 
 
