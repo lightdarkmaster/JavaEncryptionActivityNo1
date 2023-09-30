@@ -36,10 +36,10 @@ class QuizGame {
         }
 
         grade();
-        System.out.println("Score: " + score);
+        System.out.println("Score: " + score + " points");
     }
 
-    //grade your score base on the points you get from the quiz Game..
+    //grade your score base on the points you get from the quiz Game
     public static void grade() {
         if (score == 5) {
             System.out.println("Wow, you got them all correct!!");
