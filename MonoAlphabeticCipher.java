@@ -46,5 +46,16 @@ public class MonoAlphabeticCipher  {
 
 
     }
+    public static void getResults(){
+
+        int n = 20;
+        double s = 30;
+
+        if(n > 40){
+            System.out.println(n);
+        }else{
+            System.out.println(s);
+        }
+    }
 }
 //add it to the GUI
