@@ -59,3 +59,4 @@ public class MonoAlphabeticCipher  {
     }
 }
 //add it to the GUI
+
