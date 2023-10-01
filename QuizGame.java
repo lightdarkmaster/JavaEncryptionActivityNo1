@@ -11,7 +11,7 @@ class QuizGame {
 
     public static final String[] ANSWERS = {
             "Steve Jobs",
-            "Christian Barbosa",
+            "Lee Byung-chul",
             "Fredrik Idestam",
             "George Zhu",
             "Ren Zhengfei"
@@ -34,9 +34,8 @@ class QuizGame {
                 System.out.println("Sorry, you got a wrong answer..");
             }
         }
-
-        grade();
         System.out.println("Score: " + score + " points");
+        grade();
     }
 
     //grade your score base on the points you get from the quiz Game
