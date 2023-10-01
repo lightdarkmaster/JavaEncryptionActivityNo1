@@ -23,7 +23,7 @@ class QuizGame {
         System.out.println("Welcome to our Quiz Game");
 
         Scanner input = new Scanner(System.in);
-
+        //looping the questions base on the question arrays..
         for (int i = 0; i < QUESTIONS.length; i++) {
             System.out.println(QUESTIONS[i]);
             String answer = input.nextLine();
