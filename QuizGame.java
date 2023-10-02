@@ -6,7 +6,8 @@ class QuizGame {
             "Who is the Founder of Samsung Incorporation?",
             "Who is the Founder of Nokia Incorporation?",
             "Who is the Founder of Infinix Incorporation?",
-            "Who is the Founder of Huawei Incorporation?"
+            "Who is the Founder of Huawei Incorporation?",
+            "Who developed this program? "
     };
 
     public static final String[] ANSWERS = {
@@ -14,7 +15,8 @@ class QuizGame {
             "Lee Byung-chul",
             "Fredrik Idestam",
             "George Zhu",
-            "Ren Zhengfei"
+            "Ren Zhengfei",
+            "Christian Barbosa"
     };
 
     public static int score = 0;
@@ -40,9 +42,9 @@ class QuizGame {
 
     //grade your score base on the points you get from the quiz Game
     public static void grade() {
-        if (score == 5) {
+        if (score == 6) {
             System.out.println("Wow, you got them all correct!!");
-        } else if (score <= 4 && score > 0) {
+        } else if (score <= 5 && score > 0) {
             System.out.println("You did a great job.");
         } else {
             System.out.println("You failed");
