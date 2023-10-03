@@ -7,7 +7,8 @@ class QuizGame {
             "Who is the Founder of Nokia Incorporation?",
             "Who is the Founder of Infinix Incorporation?",
             "Who is the Founder of Huawei Incorporation?",
-            "Who developed this program? "
+            "Who developed this program? ",
+            "How many questiions are there in this quiz? (including this one)(in number)"
     };
 
     public static final String[] ANSWERS = {
@@ -16,7 +17,8 @@ class QuizGame {
             "Fredrik Idestam",
             "George Zhu",
             "Ren Zhengfei",
-            "Christian Barbosa"
+            "Christian Barbosa",
+            "7"
     };
 
     public static int score = 0;
