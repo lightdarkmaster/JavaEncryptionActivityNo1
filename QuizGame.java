@@ -56,3 +56,4 @@ class QuizGame {
         }
     }
 }
+//todo: add new features.. soon
