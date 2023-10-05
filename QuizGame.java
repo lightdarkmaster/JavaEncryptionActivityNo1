@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 class QuizGame {
+    //Arrays of questions in sequence
     public static final String[] QUESTIONS = {
             "Who is the Founder of Apple Incorporation?",
             "Who is the Founder of Samsung Incorporation?",
@@ -11,6 +12,7 @@ class QuizGame {
             "How many questiions are there in this quiz? (including this one)(in number)"
     };
 
+    //Arrays of answer in the questions
     public static final String[] ANSWERS = {
             "Steve Jobs",
             "Lee Byung-chul",
@@ -21,7 +23,7 @@ class QuizGame {
             "7"
     };
 
-    public static int score = 0;
+    public static int score = 0;//starting score
 
     public static void main(String[] args) {
         System.out.println("Welcome to our Quiz Game");
@@ -32,17 +34,18 @@ class QuizGame {
             System.out.println(QUESTIONS[i]);
             String answer = input.nextLine();
             if (answer.equalsIgnoreCase(ANSWERS[i])) {
-                System.out.println("You got the correct answer!!");
+                System.out.println("You got the correct answer!!");//if answer is  correct
                 score++;
             } else {
-                System.out.println("Sorry, you got a wrong answer..");
+                System.out.println("Sorry, you got a wrong answer..");//else if not correct
             }
         }
         System.out.println("Score: " + score + " points");
-        grade();
+        grade();//functions fot the grades base on the score
     }
 
     //grade your score base on the points you get from the quiz Game
+    //validations of the scores
     public static void grade() {
         if (score == 6) {
             System.out.println("Wow, you got them all correct!!");
