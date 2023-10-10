@@ -56,5 +56,7 @@ class QuizGame {
         }
     }
 }
-//todo: add new features.. soon
+//todo: add new features..
 //todo: add GUI..
+//Todo: add Gui Button
+//Resched the coding session..
