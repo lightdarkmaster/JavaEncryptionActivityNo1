@@ -56,10 +56,4 @@ class QuizGame {
         }
     }
 }
-//todo: add new features..
-//todo: add GUI..
-//Todo: add Gui Button
-//Resched the coding session..
-//sched will be on saturday.
-// there comes a time when we hear a certain call..\
-// todo: there are a lot of possible reason to implement this code..
+//Todo: Add new Features soon..
