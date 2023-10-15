@@ -57,4 +57,4 @@ class QuizGame {
     }
 }
 //Todo: Add new Features soon..
-//Soon to do:
+//This Project is a simple console base quiz game
