@@ -64,6 +64,7 @@ public class VigenereCipher
         char msg[] = plaintext.toCharArray();
         int msgLen = msg.length;
         int i,j;
+        int total = 100;// needed to be remove or mod.
 
         // Creating new char arrays
         char key[] = new char[msgLen];
