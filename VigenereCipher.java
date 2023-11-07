@@ -64,7 +64,7 @@ public class VigenereCipher
         char msg[] = plaintext.toCharArray();
         int msgLen = msg.length;
         int i,j;
-        int total = 100;// needed to be remove or mod.
+        int total = 100;// needed to be removed or mod.
 
         // Creating new char arrays
         char key[] = new char[msgLen];
@@ -87,6 +87,11 @@ public class VigenereCipher
 
         System.out.println("Decrypted Message: " + String.valueOf(decryptedMsg));
 
+    }
+
+    public void addSomeChrome(){
+        int age;
+        int name;
     }
 }
 //add some changes in the current branch..
