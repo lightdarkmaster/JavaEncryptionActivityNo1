@@ -65,6 +65,10 @@ public class VigenereCipher
         int msgLen = msg.length;
         int i,j;
         int total = 100;// needed to be removed or mod.
+        double discount = .25;
+        double subtotal = total - discount;
+
+        System.out.println(subtotal);
 
         // Creating new char arrays
         char key[] = new char[msgLen];
